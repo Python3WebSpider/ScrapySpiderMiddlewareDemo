@@ -1,12 +1,12 @@
 from scrapy import Spider, Request
 
-from spidermiddlewaredemo.items import DemoItem
+from scrapyspidermiddlewaredemo.items import DemoItem
 
 
 class HttpbinSpider(Spider):
     name = 'httpbin'
     allowed_domains = ['httpbin.org']
-    start_url = 'http://httpbin.org/get'
+    start_url = 'https://httpbin.org/get'
     
     def start_requests(self):
         for i in range(5):

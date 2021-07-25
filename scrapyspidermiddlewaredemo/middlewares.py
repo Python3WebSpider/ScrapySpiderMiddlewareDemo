@@ -8,7 +8,7 @@ from scrapy import signals, Item
 # useful for handling different item types with a single interface
 from itemadapter import is_item, ItemAdapter
 
-from spidermiddlewaredemo.items import DemoItem
+from scrapyspidermiddlewaredemo.items import DemoItem
 
 
 class CustomizeMiddleware(object):

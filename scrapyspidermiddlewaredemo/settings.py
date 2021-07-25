@@ -1,4 +1,4 @@
-# Scrapy settings for spidermiddlewaredemo project
+# Scrapy settings for scrapyspidermiddlewaredemo project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,14 +7,14 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'spidermiddlewaredemo'
+BOT_NAME = 'scrapyspidermiddlewaredemo'
 
-SPIDER_MODULES = ['spidermiddlewaredemo.spiders']
-NEWSPIDER_MODULE = 'spidermiddlewaredemo.spiders'
+SPIDER_MODULES = ['scrapyspidermiddlewaredemo.spiders']
+NEWSPIDER_MODULE = 'scrapyspidermiddlewaredemo.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'spidermiddlewaredemo (+http://www.yourdomain.com)'
+#USER_AGENT = 'scrapyspidermiddlewaredemo (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -45,13 +45,13 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 SPIDER_MIDDLEWARES = {
-   'spidermiddlewaredemo.middlewares.CustomizeMiddleware': 543,
+    'scrapyspidermiddlewaredemo.middlewares.CustomizeMiddleware': 543,
 }
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'spidermiddlewaredemo.middlewares.SpidermiddlewaredemoDownloaderMiddleware': 543,
+#    'scrapyspidermiddlewaredemo.middlewares.SpidermiddlewaredemoDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -63,7 +63,7 @@ SPIDER_MIDDLEWARES = {
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    'spidermiddlewaredemo.pipelines.SpidermiddlewaredemoPipeline': 300,
+#    'scrapyspidermiddlewaredemo.pipelines.SpidermiddlewaredemoPipeline': 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
